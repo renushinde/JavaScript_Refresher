@@ -79,7 +79,38 @@ arr3.splice(1, 3, 9,8,7,6,5,4,3);
 console.log("spliced array is " + arr3);
 
 
+/* Part 4
+*/
 
+// Create an empty array called arr.
+let arr =[];
 
+//Add your first name to the arr variable
+arr.unshift("Renu ");
+console.log("first name is " + arr);
 
+// Add your last name to the end of the arr variable
 
+arr.push("Shinde ");
+console.log("Last name is " + arr);
+
+//Add your favorite color to the beginning of the arr variable
+arr.unshift("pink ");
+console.log("Addded favorite color " + arr);
+
+//Remove the favorite color from the arr variable
+arr.shift();
+console.log("After removing favorite color " + arr);
+
+//Create another array called arr2.
+let arr5 = [];
+
+//Add your favorite number to arr2
+arr5.unshift(2);
+console.log(arr5);
+
+//Add the string "JavaScript" to the end of the arr2 variable
+arr5.push("JavaScript");
+console.log(arr5);
+
+arr5.indexOf
