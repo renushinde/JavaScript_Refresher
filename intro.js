@@ -136,3 +136,33 @@ console.log("The array6 is: " + arr6);
 //Return the string "JavaScript, Python, Ruby, Java".
 console.log(arr6.join(" "));
 
+
+/********* LOOPS ********** */
+
+// Output numbers from 1-10 using for loop
+
+for (let i=0; i<10; i++) {
+    console.log("The value of i each iteration is: " + i);
+}
+
+// round this to nearest whole number
+let decimals = [2.2, 3.4, 4.5];
+
+for (let i=0; i<decimals.length; i++) {
+    console.log("The rounded whole numbers are " + Math.round(decimals[i]));
+}
+// output numbers from an array using for_of loop
+let numbers = [2,4,6,8,10];
+for (let num of numbers) {
+    console.log("for of loop " +num);
+}
+
+//Using split to turn a string into an array
+
+let string = "Renu shinde";
+console.log(string.split(" "));
+
+//The opposite of string is join
+
+let string1 = "Jojo Pujari";
+console.log(string1.split(" ").join())
