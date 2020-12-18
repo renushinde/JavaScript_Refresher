@@ -113,4 +113,26 @@ console.log(arr5);
 arr5.push("JavaScript");
 console.log(arr5);
 
-arr5.indexOf
+// See if the value 42 exists in the arr5 array
+
+console.log(arr5.indexOf(42));
+
+
+//Create a new variable called combinedArr which is the result of your arr and arr2 variables combined into one array.
+
+let combinedArr = arr.concat(arr5);
+console.log("The combined array is: " + combinedArr);
+
+
+//Complete the following, starting from the following array: let arr = ["JavaScript", "Python", "Ruby", "Java"]
+
+let arr6 = ["JavaScript", "Python", "Ruby", "Java"];
+
+// Return the following array: ["Python", "Ruby"].
+
+console.log ("Splice- Removed value: " + arr6.splice(1,2).concat("Haskell" , "Clojure"));
+console.log("The array6 is: " + arr6);
+
+//Return the string "JavaScript, Python, Ruby, Java".
+console.log(arr6.join(" "));
+
