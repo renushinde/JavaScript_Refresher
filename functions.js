@@ -30,4 +30,64 @@ console.log(randomFood());
 
 // Create a variable called numbers which is an array that contains the numbers 1 through 10.
 
-let numbers = [1,2,3,4,5,6,7,8,9,10]
+let numbers = [1,2,3,4,5,6,7,8,9,10];
+
+// Write a function called displayOddNumbers which iterates over the numbers array and console.logs out all of the numbers that are odd.
+
+function displayOddNumbers () {
+    for (let i = 0; i < numbers.length; i ++) {
+        if (numbers[i] % 2 !== 0) {
+           console.log(numbers[i]);
+        }
+    }
+}
+console.log(displayOddNumbers(numbers));
+
+// Write a function called displayEvenNumbers which iterates over the numbers array and console.logs out all of the numbers that are even.
+
+function displayEvenNumbers () {
+    for (let i=0; i<numbers.length; i++) {
+        if (numbers[i] %2 === 0) {
+            console.log(numbers[i]);
+        }
+    }
+}
+
+console.log (displayEvenNumbers(numbers));
+
+// Create a function called returnFirstOddNumber which iterates over the numbers array and returns the first odd number it finds
+
+function returnFirstOddNumber () {
+    for (let i = 0; i < numbers.length; i ++) {
+        if (numbers[i] % 2 !== 0) {
+           return(numbers[i]);
+        }
+    }
+
+}
+
+console.log(returnFirstOddNumber(numbers));
+
+// Create a function called returnFirstEvenNumber which iterates over the numbers array and returns the first even number it finds
+
+function returnFirstEvenNumber () {
+    for (let i = 0; i < numbers.length; i ++) {
+        if (numbers[i] % 2 === 0) {
+           return(numbers[i]);
+        }
+    }
+
+}
+
+console.log(returnFirstEvenNumber(numbers));
+
+// Create a function called returnFirstHalf which returns the first half of the numbers array
+
+function returnFirstHalf () {
+    for (let i=0; i<numbers.length; i++) {
+        console.log(numbers.length/2);
+    }
+
+}
+
+console.log(returnFirstHalf(numbers));
