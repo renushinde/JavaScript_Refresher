@@ -16,3 +16,18 @@ function myName () {
 }
 
 console.log(myName());
+
+// Create an array called favoriteFoods which contains the strings "pizza" and "ice cream".
+
+let favoriteFoods = ["Pizza", "ice cream"];
+
+// Write a function called randomFood. The function should use Math.random to randomly choose a favorite food in your favoriteFoods array to return. 
+
+function randomFood () {
+    return Math.random(favoriteFoods.length);
+} 
+console.log(randomFood());
+
+// Create a variable called numbers which is an array that contains the numbers 1 through 10.
+
+let numbers = [1,2,3,4,5,6,7,8,9,10]
