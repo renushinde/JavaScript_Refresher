@@ -24,7 +24,8 @@ let favoriteFoods = ["Pizza", "ice cream"];
 // Write a function called randomFood. The function should use Math.random to randomly choose a favorite food in your favoriteFoods array to return. 
 
 function randomFood () {
-    return Math.random(favoriteFoods.length);
+    let randomIndex =Math.floor( Math.random() * favoriteFoods.length);
+    console.log(favoriteFoods[randomIndex]);
 } 
 console.log(randomFood());
 
@@ -84,10 +85,21 @@ console.log(returnFirstEvenNumber(numbers));
 // Create a function called returnFirstHalf which returns the first half of the numbers array
 
 function returnFirstHalf () {
-    for (let i=0; i<numbers.length; i++) {
-        console.log(numbers.length/2);
+    for (let i = 0; i < numbers.length; i ++) {
+        return numbers.slice(0,numbers.length/2);
     }
 
 }
 
 console.log(returnFirstHalf(numbers));
+
+//Create a function called returnSecondHalf which returns the second half of the numbers array
+
+function returnSecondHalf () {
+    for (let i=0; i<numbers.length; i++) {
+        return numbers.slice(numbers.length/2);
+    }
+
+}
+
+console.log(returnSecondHalf(numbers));
