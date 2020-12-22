@@ -23,10 +23,27 @@ console.log(sayHello("Janey"));
 //3. Write a function called average which accepts an array as a parameter. The function should return the average of all of the numbers in the array (you can assume that the array passed to the function will contain only numbers)
 
 function average (arr) {
-  for (let i = 0; i < arr.length; i++) {
-      return (arr[i] + arr[i+1]) /arr.length;
+  let total =0;
+  for (let i=0; i<arr.length; i++) {
+      total = total + arr[i];
+      console.log(total);
   }
-
+    return total/arr.length;
 }
 
 console.log(average([1,4,3,4,5]));
+console.log(average([1,2,3,4,5,6]));
+
+// 4. Write a function called extractEveryThird which accepts an array as a parameter. The function should iterate over the array and return a new array with every 3rd element in the array passed to the function.
+
+function extractEveryThird (arr) {
+    let newArr = [];
+    for (let i = 2; i < arr.length; i += 3) {
+        newArr.push(arr[i]);
+     
+    }
+        return newArr;
+}
+
+console.log(extractEveryThird([1,2,3]));
+console.log(extractEveryThird([1,2,9,4,5,6]));
