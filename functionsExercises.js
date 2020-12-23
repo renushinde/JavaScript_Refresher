@@ -138,4 +138,48 @@ function onlyCapitalLetters(str) {
 
  // this function takes in two parameters (two strings). The first parameter should be a word and the second should be a letter. The function returns the number of times that letter appears in the word. The function should be case insensitive (does not matter if the input is lowercase or uppercase). If the letter is not found in the word, the function should return 0.
  
- 
+ function singleLetterCount (word, letter) {
+    let counter = 0;
+    let newWord = word.toUpperCase();
+    // console.log(newWord);
+    for (let i = 0; i < newWord.length; i ++) {
+        if (letter.toUpperCase().includes(newWord[i])) {
+            counter ++;
+    }
+}
+    return counter;
+ }
+
+ console.log (singleLetterCount("Renu", "r"));
+ console.log (singleLetterCount("Rithm School", "o"));
+
+// this function takes in one parameter (a string) and returns an object with the keys being the letters and the values being the count of the letter.
+
+function multipleLetterCount (str) {
+    let finalObj = {};
+  for(let i =0; i< str.length; i++){
+    if (!(str[i] in finalObj)){
+      finalObj[str[i]] = 1;
+      console.log(finalObj);
+    } else {
+      finalObj[str[i]]++;
+    }
+  }
+  return finalObj;
+}
+
+console.log (multipleLetterCount ("hello"));
+
+// A Palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. This function should take in one parameter and returns true or false if it is a palindrome. As a bonus, allow your function to ignore whitespace and capitalization so that isPalindrome('a man a plan a canal Panama'); returns true
+
+function isPalindrome (word) {
+    let newWord = word.toLowerCase().split("").reverse().join("");
+    if (word === newWord) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
+console.log(isPalindrome("rar"));
