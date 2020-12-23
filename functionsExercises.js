@@ -47,3 +47,41 @@ function extractEveryThird (arr) {
 
 console.log(extractEveryThird([1,2,3]));
 console.log(extractEveryThird([1,2,9,4,5,6]));
+
+// 5. Write a function called onlyCapitalLetters which accepts a string and returns a new string with only the capital letters passed to the string.
+
+function onlyCapitalLetters(str) {
+    let newStr = "";
+    for (let i = 0; i < str.length; i ++) {
+        if ("ABCDEFGHIJKLMNOPQRSTUVWXYZ".includes(str[i])) {
+            newStr += str[i];
+        }
+    }
+    return newStr;
+}
+ console.log(onlyCapitalLetters("MAmazing"));
+
+
+ // Write a function called countEvensAndOdds which accepts an array as a parameter. This function should return an object with the count of even numbers and the count of odd numbers. The object returned should have the keys oddCount and evenCount.
+
+ function countEvensAndOdds (arr) {
+     let counterObject = {
+        oddCount: 0,
+        evenCount: 0
+     }
+  
+    for (let i = 0; i < arr.length; i ++) {
+        if (arr[i] %2 === 0) {
+            counterObject.evenCount++;
+        } else {
+            counterObject.oddCount++;
+        }
+    }
+  
+    return counterObject;
+ }
+
+ console.log(countEvensAndOdds([1,2,3,4]));
+
+ // Write a function called createStudent, which accepts two parameters both of which are strings. The function should return an object with the keys firstName and lastName and the values should be each of the
+ 
