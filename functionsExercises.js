@@ -84,4 +84,12 @@ function onlyCapitalLetters(str) {
  console.log(countEvensAndOdds([1,2,3,4]));
 
  // Write a function called createStudent, which accepts two parameters both of which are strings. The function should return an object with the keys firstName and lastName and the values should be each of the
- 
+
+ function createStudent (str1, str2) {
+    return {
+        firstName:str1,
+        lastName:str2
+    }
+ }
+
+ console.log(createStudent("Renu", "Shinde"));
