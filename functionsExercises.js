@@ -93,3 +93,28 @@ function onlyCapitalLetters(str) {
  }
 
  console.log(createStudent("Renu", "Shinde"));
+
+ //  difference this function takes in two parameters and returns the difference of the two;
+
+ function difference (a, b) {
+    return b-a;
+ }
+
+ console.log("The difference is: " + difference(2,2));
+
+ // this function takes in two parameters and returns the product of the two;
+
+ function product ( a, b ) {
+     return a * b;
+ }
+
+ console.log("The product is: " + product(2,2));
+
+ // this function takes in one parameter (an array) and returns the last value in the array. It should return undefined if the array is empty.
+
+ function lastElement (arr) {
+   
+        return arr[arr.length-1];
+ }
+
+ console.log(lastElement([1,3,4,9]));
