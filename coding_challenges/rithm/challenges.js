@@ -9,3 +9,16 @@ function stringIndexOf (word, char) {
   }
   
   console.log(stringIndexOf ("awesome", "z"));
+
+
+
+// Last Index Of ==>> Descending for loop
+
+function stringLastIndexOf(word, char) {
+    for (let i = word.length - 1; i >= 0; i--) {
+      if (word[i] === char) return i;
+    }
+    return -1;
+  }
+  
+  stringLastIndexOf ("awesome", "e");
