@@ -37,5 +37,30 @@ function stringLastIndexOf(word, char) {
   
     return newStr;
   }
+
+
+  // Write a function called removeFromString, which accepts a string, a starting index (number) and a number of characters to remove. The function should return a new string with the characters removed. 
+
+  function removeFromString(str, startIndex, numCharToRemove) {
+    let arr = str.split('');
+    arr.splice(startIndex, numCharToRemove);
+    return arr.join('');
+  }
+ console.log (removeFromString('Elie', 0, 1));
+ console.log( removeFromString('Elie', 2, 2));
+
+
+ // Another way
+
+ function removeFromString(str, start, removeCount) {
+    let newStr = '';
+    for (let i = 0; i < str.length; i++) {
+      if (i < start || i >= start + removeCount) {
+        newStr += str[i];
+      }
+    }
+    return newStr;
+  }
   
-  
+  console.log (removeFromString('Elie', 0, 1));
+  console.log( removeFromString('Elie', 2, 2));
