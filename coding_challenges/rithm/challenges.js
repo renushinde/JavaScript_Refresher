@@ -64,3 +64,14 @@ function stringLastIndexOf(word, char) {
   
   console.log (removeFromString('Elie', 0, 1));
   console.log( removeFromString('Elie', 2, 2));
+
+  // Write a function called includes, which accepts an array and a number. The function should return true if the value exists in the array and false if it does not. Do not use the built in Array.includes() function!
+
+  function includes (arr, num) {
+    for ( let i = 0; i < arr.length; i ++) {
+      if (arr[i] === num) return true;
+    }
+    return false;
+  }
+  includes([1, 2, 3, 4], 4);
+  includes([1, 2, 3, 4], 14) 
