@@ -22,3 +22,20 @@ function stringLastIndexOf(word, char) {
   }
   
   stringLastIndexOf ("awesome", "e");
+
+  // Write a function called repeat, which accepts a string and a number and returns a new string with the string repeated that number of times.
+
+  function repeat(str, num) {
+
+    var newStr = '';  // string we will build up
+  
+    for (let i = 0; i < num; i++) {
+      // note that this creates a new string every iteration of the loop
+      //  because JavaScript strings are immutable
+      newStr += str;
+    }
+  
+    return newStr;
+  }
+  
+  
