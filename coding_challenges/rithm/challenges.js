@@ -75,3 +75,16 @@ function stringLastIndexOf(word, char) {
   }
   includes([1, 2, 3, 4], 4);
   includes([1, 2, 3, 4], 14) 
+
+  // Write a function called indexOf, which accepts an array and a number. The function should return the first index at which the value exists or -1 if the value is not found. Do not use the built in Array.indexOf() function!
+
+  function indexOf (arr, num) {
+    for (let i = 0; i < arr.length; i ++) {
+      if (arr[i] === num) return i;
+    }
+    return -1;
+  }
+  let arr = [5, 10, 15, 20];
+  indexOf(arr, 20);
+
+  
