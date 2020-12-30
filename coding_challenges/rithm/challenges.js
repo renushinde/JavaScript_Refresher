@@ -151,3 +151,16 @@ function slice (arr, begin, end) {
     return counter;
   }
   countValues([4,1,4,2,3,4,4], 4);
+
+// Write a function called keys, which accepts an object and returns an array of all of the keys in the object. Do not use the built in Object.keys() function!
+
+function keys (obj) {
+    let newArr = [];
+    for (let key in obj) {
+      newArr.push(key);
+    }
+    return newArr;
+  }
+  
+  let obj = { a: 1, b: 2, c: 3 };
+  keys(obj); // ["a", "b", "c"]
