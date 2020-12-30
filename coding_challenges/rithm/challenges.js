@@ -113,4 +113,16 @@ function max (arr) {
   
   max([5, 1, 4, 7, 1, 2]);
 
-//
+// Write a function called min, which accepts an array of numbers and returns the lowest value. Do note use the built-in Math.min() function!
+
+function min ( arr ) {
+    let minNum = arr[0];
+     for ( let i = 1; i < arr.length; i ++) {
+       if (arr[i] < minNum ) {
+         minNum = arr[i];
+       }
+     }
+     return minNum;
+   }
+   
+   min([5, 1, 4, 7, 1, 2]);
