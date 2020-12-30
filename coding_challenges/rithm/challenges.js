@@ -164,3 +164,15 @@ function keys (obj) {
   
   let obj = { a: 1, b: 2, c: 3 };
   keys(obj); // ["a", "b", "c"]
+
+  // Write a function called values, which accepts an object and returns an array of all of the values in the object. Do not use the built in Object.values() function!
+
+  function values (obj) {
+    let newArr = [];
+    for (let key in obj) {
+      newArr.push(obj[key]);
+    }
+    return newArr;
+  }
+  var obj = { a: 1, b: 2, c: 3 };
+  values(obj); 
