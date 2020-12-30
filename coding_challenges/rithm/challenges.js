@@ -87,4 +87,30 @@ function stringLastIndexOf(word, char) {
   let arr = [5, 10, 15, 20];
   indexOf(arr, 20);
 
+// Write a function called lastIndexOf, which accepts an array and a number. The function should return the last index at which the value exists, or -1 if the value is not found.
+
+function lastIndexOf (arr, num) {
+    for (let i = arr.length-1; i >= 0; i --) {
+      if ( arr[i] === num) return i;
+    }
+    return -1;
+  }
   
+  lastIndexOf ([1,2,3,4], 2);
+  lastIndexOf([1, 2, 3, 4, 2], 2);
+  
+// Write a function called max, which accepts an array and returns the highest value. Do not use the built-in Math.max() function!
+  
+function max (arr) {
+    let highestNum = 0;
+    for (let i =0; i < arr.length; i ++) {
+      if (arr[i] > highestNum) {
+        highestNum = arr[i];
+      }
+    }
+    return highestNum;
+  }
+  
+  max([5, 1, 4, 7, 1, 2]);
+
+//
