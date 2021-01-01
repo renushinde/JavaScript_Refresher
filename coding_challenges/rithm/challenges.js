@@ -236,4 +236,24 @@ function entries (obj) {
   let obj = { a: 1, b: 2, c: 3 };
   entries(obj); 
   
-  
+// Another way
+
+function entries(obj) {
+    let container = [];
+    for (let key in obj) {
+      // push a sub-array of [key, obj] into the parent array
+      container.push([key, obj[key]]);
+    }
+    return container;
+  }
+
+  //Implement a function called multiples that accepts two numbers: x and n. The function should return the first n multiples of the number x. Assume that x is a positive integer.
+
+  function multiples(m, n){
+    const arr=[];
+    for (let i=1;i<=n;i++){
+    arr.push(m*i)
+    }
+    return arr
+  }
+  multiples(3, 4)
