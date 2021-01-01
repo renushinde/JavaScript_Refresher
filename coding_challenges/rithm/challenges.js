@@ -190,3 +190,21 @@ function keys (obj) {
     }
     
     sum_even ([1,2,3,4, 5, 8]);
+
+// Write a function called squareEvenNumbers which accepts an array and returns the sum of all of the even numbers in the array squared.
+
+function squareEvenNumbers (arr) {
+    let sum = 0;
+    let newArr = [];
+    for(let i = 0; i< arr.length; i++) {
+        if(arr[i] % 2 === 0) {
+        /*newArr.push(arr[i] * arr[i]);*/
+         // console.log (newArr);
+        sum += Math.pow(arr[i], 2);
+    }
+    }
+    //return newArr;
+     return sum;
+    }
+    
+    squareEvenNumbers ([1,2,3,4,5]);
