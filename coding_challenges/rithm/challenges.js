@@ -176,3 +176,17 @@ function keys (obj) {
   }
   var obj = { a: 1, b: 2, c: 3 };
   values(obj); 
+
+  // write a function to return the sum of even numbers in an array.
+
+  function sum_even(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] % 2 === 0) {
+         sum = sum + arr[i];
+    }
+    }
+    return sum;
+    }
+    
+    sum_even ([1,2,3,4, 5, 8]);
