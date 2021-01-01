@@ -208,3 +208,32 @@ function squareEvenNumbers (arr) {
     }
     
     squareEvenNumbers ([1,2,3,4,5]);
+
+
+    // Another way
+
+    function squareEvenNumbers(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] % 2 === 0) {
+            sum += arr[i] ** 2;
+          }
+        }
+        return sum;
+      }
+
+// Object.entries() function
+
+function entries (obj) {
+    let objKeys=Object.keys(obj);
+    let i = objKeys.length;
+    let objArr = [];
+    for ( let key in obj) {
+      objArr.push([key, obj[key]]);
+    }
+    return objArr;
+  }
+  let obj = { a: 1, b: 2, c: 3 };
+  entries(obj); 
+  
+  
