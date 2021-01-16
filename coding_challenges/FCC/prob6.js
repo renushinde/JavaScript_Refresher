@@ -1,11 +1,13 @@
 // confirm the ending
 
-function confirmEnding(str, target) {
-    let lastLetter = str[str.length-1];
-    if (lastLetter === target.length) {
-        return true;
-    } else {
-        return false;
-    }
-}
- console.log(confirmEnding("Bastian", "n"));
+ function confirmEnding(str, target) {
+    let newStr = '';
+  
+    newStr = str.slice(str.length - target.length);
+    console.log(newStr);
+  
+    return newStr === target;
+  
+  }
+  
+ console.log(confirmEnding("Bastian", "ian"));
