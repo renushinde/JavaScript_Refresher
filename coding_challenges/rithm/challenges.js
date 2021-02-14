@@ -267,3 +267,10 @@ function pluck(arr, key) {
     }
     return newArr;
   }
+
+  // Add two numbers
+  function add (a, b) {
+    return a + b; 
+  }
+
+  console.log (add (3,4));
