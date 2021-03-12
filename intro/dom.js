@@ -1,17 +1,12 @@
-//console.log("Hello");
-let headerText = document.getElementById("header-title");
-/* let button = document.getElementById("button").addEventListener("click", buttonClick); */
-function buttonClick(event) {
-    /* headerText.style.color = "red"; */
-    console.log(event.target);
-    console.log(event.target.id);
-    console.log(event.type);
-    console.log(event.clientX);// This is from the window
-    console.log(event.offsetX); // This is from the element
-}
+//alert("connected!");
 
-// Event Types
-let button = document.getElementById("button").addEventListener("click", runEvent);
-function runEvent(e) {
-   console.log("The type of event is: ", e.type);
-}
+const userinfo = document.getElementById("userinfo");
+const container = document.getElementById("container");
+//console.log(userinfo);
+//console.log(container);
+userinfo.addEventListener('submit', function(e){
+    e.preventDefault();
+    const firstname = document.querySelectorAll("input")[0].value;
+    const lastname = document.querySelectorAll("input")[1].value;
+    /* console.log(`${firstname}, ${lastname}`); */
+});
