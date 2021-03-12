@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.square {
+    width: 100px;
+    height: 60px;
+    background-color:cadetblue ;
+    margin: auto;
+    margin-top: 25px;
+    overflow: hidden;
+} 
