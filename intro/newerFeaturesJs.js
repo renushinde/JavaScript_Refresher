@@ -33,3 +33,35 @@ Math.max(nums); //NaN
 // SPREAD TO THE RESCUE
 
 Math.max(...nums); // with the ... syntax entire array is going to be spread out into seperate arguments.
+
+
+// SPREAD with arrays
+
+const primaryColors = ['red', 'green', 'blue'];
+const secondaryColors = ['purple', 'pink', 'crimson'];
+
+// spread allows us to spread in iterable like an array into a new array.
+const allColors = [...primaryColors, ...secondaryColors];
+console.log("Result of concatening primaryColors and secondaryColors ", allColors); // Array(6) 
+
+console.log(['orange', ...secondaryColors]); // orange gets added at the beginning of secondaryColors array.
+
+console.log([...primaryColors, ...secondaryColors, 'white', 'black']); // white and black are added at the end.
+
+// spread with Objects
+
+const personA = {
+    name: "Renu"
+    
+}
+
+const personB = {
+    lastName:"Pujari"
+}
+
+const family = {...personA, ...personB, isCool:true}; 
+console.log(family); // Here, the properties of personA and personB are copied into family object. 
+//We can even add a new property to this object.
+
+// REST OPERATOR
+
