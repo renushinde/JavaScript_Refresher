@@ -63,5 +63,52 @@ const family = {...personA, ...personB, isCool:true};
 console.log(family); // Here, the properties of personA and personB are copied into family object. 
 //We can even add a new property to this object.
 
-// REST OPERATOR
+// ARGUMENTS OBJECT
 
+function sum (){
+    console.log(arguments); // arguments object is automatically going to collect all arguments passed to the function.
+    }
+console.log(sum(2,3,4,5,6)); // It contains all of the values in an order.
+
+
+// Can't use array methods like reduce.
+
+function sum() {
+    return arguments.reduce((total, el) => total + el);
+} // arguments.reduce is not a function
+
+
+// REST params
+
+function sum (...nums) {
+    return nums.reduce((total, el) => total + el);
+}
+
+// Another example
+
+function sumOfAllArray (...arr) {
+    let total = 0;
+    for (let i of arr) total +=i;
+    return total;
+}
+
+console.log("The sum of array is: ", sumOfAllArray(3,4,5));  // 12
+
+// ARRAY DESTRUCTURING
+
+let numbers = [6, 5, 4, 3]; 
+
+// Here, I want to single out max and second Max number.
+// old way of doing it-
+// let max = numbers[0];
+// let secondMax = numbers[1];
+
+const [max, secondMax, ...lowerNumbers] = numbers;
+
+console.log(max); // Here max is holding the value of numbers[0];
+console.log(secondMax); // 5
+console.log(lowerNumbers); // We've used spread to singling out the remaining values [4,3]
+console.log(numbers); // numbers is unchanged.
+
+
+// OBJECT DESTRUCTURING
